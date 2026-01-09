@@ -6,8 +6,6 @@ Modern UI, AI Chatbot ve 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu 
 
 ![Login Ekranı](StokTakipOtomasyon/Ekran%20Görüntüleri/login.png)
 
-![Login](StokTakipOtomasyon/Ekran%20Görüntüleri/login.png)
-
 ### Dashboard - 5 Widget
 ![Dashboard](StokTakipOtomasyon/Ekran%20Görüntüleri/dashboard.png)
 
