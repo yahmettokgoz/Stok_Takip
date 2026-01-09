@@ -116,8 +116,8 @@ StokTakipOtomasyon/Database/CreateDatabase.sql
 
 | Kullanıcı | Şifre | Rol |
 |-----------|-------|-----|
-| admin | admin | Admin |
-| personel1 | password | Personel |
+| admin | admin123 | Admin |
+
 
 ## 📂 Proje Yapısı
 
