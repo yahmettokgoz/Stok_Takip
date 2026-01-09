@@ -2,9 +2,10 @@
 
 Modern UI, AI Chatbot ve 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu projesi.
 
+### Login Ekranı
+
 ![Login Ekranı](StokTakipOtomasyon/Ekran%20Görüntüleri/login.png)
 
-### Login Ekranı
 ![Login](StokTakipOtomasyon/Ekran%20Görüntüleri/login.png)
 
 ### Dashboard - 5 Widget
@@ -66,7 +67,7 @@ Modern UI, AI Chatbot ve 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu 
 - Transaction güvenliği
 
 ### 📈 Dashboard
-- **5 Widget:** Toplam Satış, Toplam Ürün Çeşidi, Toplam Ürün Miktarı, Aylık Ciro, Kritik Stok
+- **4 Widget:** Toplam Satış, Toplam Ürün Çeşidi, Aylık Ciro, Kritik Stok
 - Gerçek zamanlı veriler
 - Modern dark theme UI
 
