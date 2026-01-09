@@ -156,24 +156,4 @@ Satış işleminde: Satış kaydı → Detaylar → Stok güncelleme → Stok ha
 - "MacBook Pro stoğu ne durumda?"
 ```
 
-## 🎯 Proje Özellikleri
-
-### ✅ Tamamlanan
-- [x] Modern dark theme UI
-- [x] 5 kartlı dashboard
-- [x] AI Chatbot (Groq API)
-- [x] Ürün yönetimi (CRUD)
-- [x] Stok yönetimi
-- [x] Satış modülü
-- [x] Kritik stok uyarıları
-- [x] 3-tier architecture
-- [x] PlantUML ER diyagram
-
-### 📝 Gelecek
-- [ ] Excel export/import
-- [ ] Barkod okuyucu
-- [ ] Fiş/Fatura yazdırma
-- [ ] Detaylı grafik raporları
-- [ ] E-posta bildirimleri
-
 mail:ahmetyusuftokgoz@gmail.com
