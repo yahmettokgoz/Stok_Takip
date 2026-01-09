@@ -176,10 +176,4 @@ Satış işleminde: Satış kaydı → Detaylar → Stok güncelleme → Stok ha
 - [ ] Detaylı grafik raporları
 - [ ] E-posta bildirimleri
 
-
----
-
-**Geliştirme Tarihi:** Ocak 2026  
-**Durum:** ✅ Aktif geliştirme - AI özelliği eklendi
-
-**🚀 Proje GitHub'da! Login: admin / admin**
+mail:ahmetyusuftokgoz@gmail.com
