@@ -1,0 +1,9 @@
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\bin\Debug\StokTakip.Business.dll
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\bin\Debug\StokTakip.Business.pdb
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\bin\Debug\StokTakip.DataAccess.dll
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\bin\Debug\StokTakip.DataAccess.pdb
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\obj\Debug\StokTakip.Business.csproj.AssemblyReference.cache
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\obj\Debug\StokTakip.Business.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\obj\Debug\StokTaki.AD49055A.Up2Date
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\obj\Debug\StokTakip.Business.dll
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.Business\obj\Debug\StokTakip.Business.pdb

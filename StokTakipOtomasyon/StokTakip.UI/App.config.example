@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+  </startup>
+  
+  <connectionStrings>
+    <add name="StokTakipDB" 
+         connectionString="Server=YOUR_SERVER\SQLEXPRESS;Database=EnGuncelStokTakip;Integrated Security=true;" 
+         providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  
+  <appSettings>
+    <!-- Groq API Key - https://console.groq.com/keys adresinden ücretsiz alabilirsiniz -->
+    <add key="Groq_ApiKey" value="YOUR_GROQ_API_KEY_HERE" />
+  </appSettings>
+</configuration>

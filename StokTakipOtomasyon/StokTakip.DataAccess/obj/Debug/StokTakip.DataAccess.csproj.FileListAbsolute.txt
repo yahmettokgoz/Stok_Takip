@@ -1,0 +1,6 @@
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\bin\Debug\StokTakip.DataAccess.dll
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\bin\Debug\StokTakip.DataAccess.pdb
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\obj\Debug\StokTakip.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\obj\Debug\StokTakip.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\obj\Debug\StokTakip.DataAccess.dll
+C:\Users\Ahmet\Desktop\DenemeProje\StokTakipOtomasyon\StokTakip.DataAccess\obj\Debug\StokTakip.DataAccess.pdb

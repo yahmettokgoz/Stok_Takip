@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|c:\\users\\ahmet\\desktop\\denemeproje\\stoktakipotomasyon\\stoktakip.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|solutionrelative:stoktakip.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\stoktakip.ui\\forms\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|solutionrelative:stoktakip.ui\\forms\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\stoktakip.ui\\forms\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-4C5D-9E1F-3A4B5C6D7E8F}|StokTakip.UI\\StokTakip.UI.csproj|solutionrelative:stoktakip.ui\\forms\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "StokTakip.UI\\Forms\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "StokTakip.UI\\Forms\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T21:02:26.383Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmAnaSayfa.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "RelativeDocumentMoniker": "StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "RelativeToolTip": "StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAADgv6kAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T19:13:49.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmAnaSayfa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "RelativeDocumentMoniker": "StokTakip.UI\\Forms\\FrmAnaSayfa.cs",
+              "ToolTip": "C:\\Users\\Ahmet\\Desktop\\DenemeProje\\StokTakipOtomasyon\\StokTakip.UI\\Forms\\FrmAnaSayfa.cs [Design]",
+              "RelativeToolTip": "StokTakip.UI\\Forms\\FrmAnaSayfa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T19:13:48.222Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
