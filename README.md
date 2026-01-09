@@ -6,7 +6,7 @@ Modern UI, AI Chatbot ve 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu 
 
 ## 🎯 Özellikler
 
-### 🤖 AI Chatbot (Yeni!)
+### 🤖 AI Chatbot 
 - **Groq API** entegrasyonu (LLaMA 3.3 70B)
 - İş zekası analizi ve öneriler
 - Kategori bazlı kar marjı analizi
