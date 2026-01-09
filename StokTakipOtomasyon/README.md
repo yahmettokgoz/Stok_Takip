@@ -1,6 +1,8 @@
 # 🏪 Stok Takip Otomasyonu
 
-Modern UI ile geliştirilmiş, 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu projesi.
+Modern UI, AI Chatbot ve 3 katmanlı mimari yapıya sahip Stok Takip Otomasyonu projesi.
+
+![Login Ekranı](Ekran%20Görüntüleri/login.png)
 
 ## 🎯 Proje Yapısı
 
@@ -11,11 +13,11 @@ StokTakipOtomasyon/
 │   ├── Models/               # 7 Entity Model
 │   └── Repositories/         # 5 Repository
 ├── StokTakip.Business/       # Business Logic Layer (BLL)
-│   ├── Services/             # 4 Service
+│   ├── Services/             # AIService, AuthService, UrunService, SatisService
 │   ├── Validators/           # Validation Logic
 │   └── Helpers/              # SecurityHelper
 └── StokTakip.UI/             # Presentation Layer (UI)
-    ├── Forms/                # Login, AnaSayfa
+    ├── Forms/                # Login, AnaSayfa, AI Asistan
     ├── Components/           # ModernCard, ModernButton, DashboardWidget
     └── Helpers/              # ThemeColors, SessionManager, MessageHelper
 ```
@@ -27,8 +29,19 @@ StokTakipOtomasyon/
 - **Database:** MS SQL Server
 - **Architecture:** 3-Tier Architecture (N-Tier)
 - **Security:** SHA-256 Password Hashing
+- **AI:** Groq API (LLaMA 3.3 70B) - Ücretsiz
 
 ## ✨ Özellikler
+
+### 🤖 AI Chatbot (Yeni!)
+- **Groq API** ile güçlendirilmiş akıllı asistan
+- İş analizi ve stratejik öneriler
+- Kategori bazlı kar marjı analizi
+- Stok durumu sorgulama
+- Finansal öngörüler ve raporlama
+- Türkçe doğal dil desteği
+
+![AI Asistan](Ekran%20Görüntüleri/ai-asistan.png)
 
 ### 🔐 Güvenlik & Yetkilendirme
 - SHA-256 şifre hash'leme
@@ -37,10 +50,15 @@ StokTakipOtomasyon/
 
 ### 📦 Ürün Yönetimi
 - Ürün CRUD işlemleri
-- Kategori bazlı yönetim (Ana/Alt kategori)
+- Kategori bazlı yönetim (12 kategori: Telefon, Bilgisayar, Tablet, vb.)
 - Barkod desteği
 - Kritik stok uyarıları
 - Ürün arama ve filtreleme
+- Kar marjı hesaplama
+
+![Ürünler](Ekran%20Görüntüleri/urunler.png)
+
+![Ürün Düzenle](Ekran%20Görüntüleri/urun-duzenle.png)
 
 ### 📊 Stok Yönetimi
 - Stok giriş/çıkış kayıtları
@@ -49,19 +67,34 @@ StokTakipOtomasyon/
 - Stok sayım özelliği
 - Gerçek zamanlı stok durumu
 
+![Stok Hareketleri](Ekran%20Görüntüleri/stok-hareketleri.png)
+
+![Yeni Hareket](Ekran%20Görüntüleri/yeni-hareket.png)
+
 ### 🛒 Satış Modülü
 - Hızlı satış işlemleri
-- Otomatik satış numarası (FS2025-00001)
+- Otomatik satış numarası
 - İndirim ve KDV hesaplaması
 - Kar/Zarar analizi
 - Transaction güvenliği (stok + satış senkronizasyonu)
 
+![Satış](Ekran%20Görüntüleri/satis.png)
+
 ### 📈 Raporlama & Dashboard
-- 4 Widget'lı modern dashboard
+- **5 Widget'lı modern dashboard:**
+  1. Toplam Ürün Çeşidi
+  2. Toplam Ürün Miktarı (Yeni!)
+  3. Stok Değeri
+  4. Günlük Satış
+  5. Kritik Stok
 - Günlük/Aylık satış raporları
 - Toplam ciro ve kar göstergeleri
 - Kritik stok bildirimleri
 - Grafik ve istatistikler
+
+![Dashboard](Ekran%20Görüntüleri/dashboard.png)
+
+![Kritik Stok](Ekran%20Görüntüleri/kritik-stok.png)
 
 ### 🎨 Modern UI
 - **Dark Theme** (Cyberpunk/Slate renk paleti)
@@ -72,47 +105,60 @@ StokTakipOtomasyon/
 - Responsive layout
 - Smooth animations
 
+![Ayarlar](Ekran%20Görüntüleri/ayarlar.png)
+
 ## 🗄️ Veritabanı Şeması
 
-**8 Ana Tablo:**
+**7 Ana Tablo:**
 - `Kullanicilar` - Kullanıcı yönetimi
-- `Kategoriler` - Ürün kategorileri
-- `Urunler` - Ürün bilgileri
-- `StokHareketleri` - Stok giriş/çıkış kayıtları
-- `Satislar` - Satış master
-- `SatisDetaylari` - Satış detayları
+- `Kategoriler` - 12 ürün kategorisi
 - `Tedarikciler` - Tedarikçi bilgileri
-- `UrunTedarikci` - Ürün-Tedarikçi ilişkisi
+- `Urunler` - Ürün bilgileri (Kategori ve Tedarikçi ilişkili)
+- `StokHareketleri` - Stok giriş/çıkış/iade/sayım kayıtları
+- `Satislar` - Satış master kayıtları
+- `SatisDetaylari` - Satış detay kayıtları
+
+**ER Diyagram:** `ER_Diagram.puml` dosyasında PlantUML formatında mevcuttur.
 
 ## 🚀 Kurulum
 
 ### 1. Veritabanı Kurulumu
 ```sql
 -- SQL Server Management Studio'da çalıştırın:
-Database\CreateDatabase.sql
+1. Database\CreateDatabase.sql dosyasını açın
+2. Tüm SQL komutlarını çalıştırın
+3. Veritabanı adı: EnGuncelStokTakip
 ```
 
 ### 2. Bağlantı Ayarları
-`StokTakip.UI\App.config` dosyasında connection string'i güncelleyin:
+`App.config.example` dosyasını `App.config` olarak kopyalayın ve güncelleyin:
 ```xml
 <connectionStrings>
   <add name="StokTakipDB" 
-       connectionString="Server=SUNUCU_ADI\SQLEXPRESS;Database=EnGuncelStokTakip;Integrated Security=true;" 
+       connectionString="Server=YOUR_SERVER\SQLEXPRESS;Database=EnGuncelStokTakip;Integrated Security=true;" 
        providerName="System.Data.SqlClient"/>
 </connectionStrings>
 ```
 
-### 3. Projeyi Derleyin
+### 3. AI Chatbot Kurulumu (İsteğe Bağlı)
+1. [Groq Console](https://console.groq.com/keys) adresinden ücretsiz API key alın
+2. `App.config` dosyasına ekleyin:
+```xml
+<appSettings>
+  <add key="Groq_ApiKey" value="YOUR_GROQ_API_KEY_HERE" />
+</appSettings>
+```
+
+### 4. Projeyi Derleyin
 - Visual Studio'da `StokTakipOtomasyon.sln` dosyasını açın
 - Build → Rebuild Solution
 - F5 ile çalıştırın
 
-## 👤 Test Kullanıcıları
+## 👤 Varsayılan Kullanıcılar
 
 | Kullanıcı Adı | Şifre | Rol |
 |---------------|-------|-----|
-| admin | admin123 | Admin |
-| personel1 | password | Personel |
+| admin | admin | Admin |
 
 ## 📸 Ekran Görüntüleri
 
@@ -147,6 +193,7 @@ Database\CreateDatabase.sql
 
 **Bileşenler:**
 - `AuthService` - Giriş, şifreleme
+- `AIService` - Groq API entegrasyonu, iş analizi (Yeni!)
 - `UrunService` - Ürün iş mantığı
 - `StokService` - Stok hareketleri
 - `SatisService` - Satış ve kar hesaplama
@@ -214,18 +261,28 @@ TextSecondary = #94A3B8 (Slate-400)
 - Kullanıcı dostu hata mesajları
 - Exception logging hazır
 
-## 📝 TODO - Gelecek Özellikler
+## 🎯 Proje Özellikleri
 
-- [ ] Ürünler sayfası (Responsive card layout)
-- [ ] Satış formu (POS benzeri arayüz)
-- [ ] Stok hareketleri sayfası
-- [ ] Detaylı raporlar ve grafikler
+### ✅ Tamamlanan Özellikler
+- [x] Modern dark theme UI
+- [x] 5 kartlı dashboard
+- [x] AI Chatbot (Groq API)
+- [x] Ürün yönetimi (CRUD)
+- [x] Stok yönetimi
+- [x] Satış modülü
+- [x] Kritik stok uyarıları
+- [x] Kullanıcı yönetimi
+- [x] SHA-256 güvenlik
+- [x] 3-tier architecture
+- [x] PlantUML ER diyagram
+
+### 📝 Gelecek Özellikler
 - [ ] Excel export/import
 - [ ] Barkod okuyucu entegrasyonu
 - [ ] Fiş/Fatura yazdırma
-- [ ] Kullanıcı yönetimi sayfası
-- [ ] Kategori yönetimi sayfası
-- [ ] Tedarikçi yönetimi
+- [ ] Detaylı grafik raporları
+- [ ] E-posta bildirimleri
+- [ ] Mobil uygulama entegrasyonu
 
 ## 👨‍💻 Geliştirici Notları
 
@@ -235,15 +292,18 @@ TextSecondary = #94A3B8 (Slate-400)
 3. `MessageHelper` ile kullanıcı bildirimleri göster
 4. `ThemeColors` ile tutarlı renk paleti kullan
 
-### Yeni Repository Eklemek İçin:
-1. `DataAccess/Models` klasörüne model ekle
-2. `DataAccess/Repositories` klasörüne repository ekle
-3. `Business/Services` klasörüne service ekle
-4. İş kurallarını service katmanına yaz
+### AI Asistan Kullanımı:
+```csharp
+// Örnek sorular:
+- "Hangi kategori en karlı?"
+- "Kritik stok ürünleri neler?"
+- "İşletmem için öneriler neler?"
+- "MacBook Pro stoğu ne durumda?"
+```
 
 ---
 
-**Geliştirme Tarihi:** Aralık 2025  
-**Durum:** ✅ Temel yapı tamamlandı, ek özellikler geliştirme aşamasında
+**Geliştirme Tarihi:** Ocak 2026  
+**Durum:** ✅ Aktif geliştirme - AI özelliği eklendi
 
-**🚀 Proje Hazır! Login yapıp test edebilirsiniz.**
+**🚀 Proje GitHub'da! Login: admin / admin**
